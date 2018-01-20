@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ARPathFinder.iml" filepath="$PROJECT_DIR$/ARPathFinder.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core-0.91.0/core-0.91.0.iml" filepath="$PROJECT_DIR$/core-0.91.0/core-0.91.0.iml" />
     </modules>
   </component>
 </project>
