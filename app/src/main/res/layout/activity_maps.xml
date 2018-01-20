@@ -13,6 +13,17 @@
         android:layout_height="match_parent"
         tools:context="com.example.michaelzhou.arpathfinder.MapsActivity" />
 
+    <Button
+        android:id="@+id/ar_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/address"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/address"
+        android:layout_marginBottom="13dp"
+        android:width="250dp"
+        android:text="View in AR" />
+
     <EditText
         android:id="@+id/address"
         android:layout_width="wrap_content"
@@ -32,5 +43,16 @@
         android:textAlignment="textStart"
         android:textSize="18sp"
         tools:ignore="Deprecated,HardcodedText,RtlHardcoded" />
+
+    <Button
+        android:id="@+id/dir_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/address"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/address"
+        android:layout_marginBottom="13dp"
+        android:width="250dp"
+        android:text="Get Directions" />
 
 </RelativeLayout>

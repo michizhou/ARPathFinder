@@ -5,6 +5,9 @@ import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -20,6 +23,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private GoogleMap mMap;
     private static final int LOCATION_REQUEST = 500;
     ArrayList<LatLng> listPoints;
+    Button ar_button, dir_button;
+    EditText m_address;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +35,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
         listPoints = new ArrayList<>();
-
+        ar_button = (Button) findViewById(R.id.ar_button);
+        ar_button.setVisibility(View.INVISIBLE);
+        dir_button = (Button) findViewById(R.id.dir_button);
+        dir_button.setVisibility(View.INVISIBLE);
+        m_address = (EditText) findViewById(R.id.address);
     }
+
 
 
     /**
@@ -67,6 +77,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 markerOptions.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED));
 
                 mMap.addMarker(markerOptions);
+
+                dir_button.setVisibility(View.VISIBLE);
+                String lat = String.valueOf(latLng.latitude);
+                String lon = String.valueOf(latLng.longitude);
+
+                String address = "(" + lat.substring(0, 8)  + ", " + lon.substring(0, 8) + ")";
+                m_address.setText(address);
             }
         });
 
