@@ -13,7 +13,7 @@ import android.content.Context;
  * Created by michaelzhou on 1/20/18.
  */
 
-public class HelloArActivity extends FragmentActivity implements SensorEventListener {
+public class HelloArActivity extends FragmentActivity {
     private SensorManager mSensorManager;
     private Sensor mSensor1;
     private Sensor mSensor2;
@@ -25,10 +25,12 @@ public class HelloArActivity extends FragmentActivity implements SensorEventList
         setContentView(R.layout.hello_ar_activity);
 
         mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
-        mSensor1 = mSensorManager.getDefaultSensor(Sensor.TYPE_GEOMAGNETIC_ROTATION_VECTOR);
         mSensor2 = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
 
-        mSensor1.
+
+
+
+        mSensor1 = mSensorManager.getDefaultSensor(Sensor.TYPE_GEOMAGNETIC_ROTATION_VECTOR);
 
         // Rotation matrix based on current readings from accelerometer and magnetometer.
         final float[] rotationMatrix = new float[9];
@@ -41,15 +43,42 @@ public class HelloArActivity extends FragmentActivity implements SensorEventList
 
 
     }
+}
 
-    @Override
-    public void onSensorChanged(SensorEvent event) {
-        
+public class MagFieldSensorEventListener implements SensorEventListener {
+
+    public MagFieldSensorEventListener () {
     }
 
     @Override
-    public void onAccuracyChanged(Sensor sensor, int accuracy) {
+    public void onAccuracyChanged (Sensor sensor, int k) {
 
+    }
+
+    @Override
+    public void onSensorChanged (SensorEvent sensorEvent) {
+        if (sensorEvent.sensor.getType() == Sensor.TYPE_MAGNETIC_FIELD) {
+            // use sensorEvent.values[0-2]
+
+       }
+    }
+}
+
+public class AccelSensorEventListener implements SensorEventListener {
+    public AccelSensorEventListener () {
+
+    }
+
+    @Override
+    public void onAccuracyChanged (Sensor sensor, int k) {
+
+    }
+
+    @Override
+    public void onSensorChanged (SensorEvent sensorEvent) {
+        if (sensorEvent.sensor.getType() == Sensor.TYPE_ACCELEROMETER) {
+            // use sensorEvent.values[0-2]
+        }
     }
 }
 
