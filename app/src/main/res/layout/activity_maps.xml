@@ -31,7 +31,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="7dp"
-        android:width="315dp"
+        android:width="280dp"
         android:background="@color/common_google_signin_btn_text_dark_default"
         android:hint="Enter Address"
         android:inputType="text"
