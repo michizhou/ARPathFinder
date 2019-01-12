@@ -19,14 +19,14 @@ This was an ambitious project that had a long series of roadblocks we had to sur
 
 Most Notable Accomplishments
 
-It was quite satisfying to see the visuals of our app improve as we learned OpenGL. Our team celebrated every time we managed to achieve another step in rendering the overly. We are also proud of the clean interface and user interface design.
-Bringing it all together, integration was definitely a big milestone for the team as we all came from different backgrounds and only familiarized ourselves with each other a few days ago after meeting online last week. Furthermore considering our different skill sets, we are proud of the level of cohesion our team had.
+It was quite satisfying to see the visuals of our app improve as we learned OpenGL. Our team celebrated every time we managed to achieve another step in rendering the overlay. We are also proud of the clean interface and user interface design.
+Bringing it all together, integration was definitely a big milestone for the team as we all came from different backgrounds and only got familiar with each other a few days ago after meeting online last week. Furthermore, considering our different skill sets, we are extremely proud of the level of cohesion our team had.
 
 ![alt-text-2](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/000/589/898/datas/gallery.jpg)
 
 Lessons Learned
 
-During the course of 36 hours, our team has grown from vague acquaintances to close friends who will continue to connect with each other in the future. We have learned immensely in the technical sense from each other. Exchange of information between our team members has led into us teaching each other about GitHub, Google APIs, ARCore, OpenGL, Blender and other technologies we were previously unfamiliar to. Having complementaryskill sets, we were able to fill in the gaps in each other's knowledge. We learned how to display markers on a map, generating objects, and about obj files and the principle of how they are used to 3D model in the AR scene. We gained an enhanced understanding of listeners from Stack Overflow, and truly furthered our technical and general knowledge.
+During the course of 36 hours, our team had grown from vague acquaintances to close friends who will continue to connect with each other in the future. We have learned immensely in the technical sense from each other. Exchange of information between our team members has led into us teaching each other about GitHub, Google APIs, ARCore, OpenGL, Blender and other technologies we were previously unfamiliar to. Having complementaryskill sets, we were able to fill in the gaps in each other's knowledge. We learned how to display markers on a map, generating objects, and about obj files and the principle of how they are used to 3D model in the AR scene. We gained an enhanced understanding of listeners from Stack Overflow, and truly enhanced our technical and general knowledge.
 
 Future Work and Next Steps
 
